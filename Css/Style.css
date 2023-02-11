@@ -1,0 +1,168 @@
+
+h1{
+    color: white;
+}
+
+#perfil{
+    border-radius: 50%;
+    height: 350px;
+    width: 400;
+}
+
+#imgIcon {
+    width: 70px;
+    height: 70px;
+}
+
+.ulIcons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.social__list {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+#skills{
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    
+}
+
+#descripcion{
+    resize:none;
+}
+
+.centrado{
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+body{
+    background: #5433FF;  
+    background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);
+    background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);
+}
+
+
+.body-2{
+    background: #16222A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.imgIcon{
+    width: 10px;
+    height: 10px;
+}
+
+  
+.divcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.parrafo{
+    font-weight: 100;
+}
+
+
+
+.icon{
+    display: inline;
+    font-size: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+@import "compass/css3";
+
+
+
+
+/* .slideTwo */
+.slideTwo {
+    width: 80px;
+    height: 30px;
+    background: #333;
+    margin: 20px auto;
+    position: relative;
+    border-radius: 50px;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+  }
+  .slideTwo:after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    height: 2px;
+    width: 52px;
+    background: #111;
+    border-radius: 50px;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+  }
+  .slideTwo label {
+    display: block;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    position: absolute;
+    top: 4px;
+    z-index: 1;
+    left: 4px;
+    background: #fcfff4;
+    border-radius: 50px;
+    transition: all 0.4s ease;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  }
+  .slideTwo label:after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background: #333;
+    border-radius: 50px;
+    box-shadow: inset 0px 1px 1px black, 0px 1px 0px rgba(255, 255, 255, 0.9);
+  }
+  .slideTwo input[type="checkbox"] {
+    visibility: hidden;
+  }
+  .slideTwo input[type="checkbox"]:checked + label {
+    left: 54px;
+  }
+  .slideTwo input[type="checkbox"]:checked + label:after {
+    background: #27ae60;
+    /*activeColor*/
+  }
+  
+/* end .slideTwo */
+ 
