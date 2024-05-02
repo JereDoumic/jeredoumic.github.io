@@ -9,3 +9,4 @@ function changeBackground(){
 function openCV(){
     "window.open(‘CV\Jeremias Doumic CV.pdf’)";
 }
+
