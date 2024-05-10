@@ -1,1 +1,0 @@
-# jeredoumic.github.io
