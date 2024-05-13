@@ -11282,15 +11282,15 @@ p {
 }
 
 .blog-card .img-holder {
-  min-width: 350px;
-  max-width: 350px;
+  min-width: 650px;
+  max-width: 650px;
 }
 
 .blog-card .img-holder img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+     object-fit: contain;
 }
 
 .blog-card .content-holder {
