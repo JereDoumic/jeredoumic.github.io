@@ -11,6 +11,11 @@
     <!-- Bootstrap + JohnDoe main styles -->
 	<link rel="stylesheet" href="assets/css/johndoe.css">
     <link rel="icon" type="image/png" href="assets/imgs/background1.jpg ">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Toastr -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 
     <script src="https://kit.fontawesome.com/d47ea04b12.js" crossorigin="anonymous"></script>
 </head>
@@ -631,7 +636,7 @@
                 <!-- blog-card -->
                 <div class="blog-card">
                     <div class="img-holder">
-                        <img src="assets/imgs/JumpingDino.jpg">
+                        <img src="assets/imgs/JumpingDino.jpg" style="width: 500px;">
                     </div>
                     <div class="content-holder">
                         <h6 class="title">Jumping Dino</h6>
@@ -679,12 +684,32 @@
                     <li class="social-item"><a class="social-link text-danger" href="https://www.linkedin.com/in/jeredoumic/" target="_blank"><i class="fa-brands fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
                     <li class="social-item ml-3"><a class="social-link text-danger" href="https://wa.me/5492234268047" target="_blank"><i class="fa-brands fa-whatsapp fa-lg" aria-hidden="true"></i></a></li>
                     <li class="social-item ml-3"><a class="social-link text-danger" href="https://github.com/JereDoumic?tab=repositories" target="_blank"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i></a></li>
-                    <li class="social-item ml-3"><a class="social-link text-danger"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true" ></i> </li>
+                    <li class="social-item ml-3"><a href="#contact" class="social-link text-danger" id="copiarTexto"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true" ></i> </li>
                 </ul>  
             </div>
-            
         </div>
     </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        const enlace = document.getElementById('copiarTexto');
+        const texto = "jere.doumic@outlook.com";
+
+        enlace.addEventListener('click', function() {
+            const input = document.createElement('textarea');
+            input.style.position = 'fixed';
+            input.style.opacity = 0;
+            input.value = texto;
+            document.body.appendChild(input);
+            input.select();
+            document.execCommand('copy');
+            document.body.removeChild(input);
+            toastr.success('Email copiado al portapapeles');
+            
+        });
+    </script>
 
 	<!-- core  -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
@@ -695,9 +720,6 @@
 
     <!-- Isotope  -->
     <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
-    
-    <!-- Google mpas -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
 
     <!-- JohnDoe js -->
     <script src="assets/js/johndoe.js"></script>
